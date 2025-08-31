@@ -1,0 +1,86 @@
+.app-header {
+	/* background-color: var(--color-primary-400); */
+	background-color: #253956;
+	position: sticky;
+	z-index: 9999;
+	top: 0;
+}
+.app-header__main {
+	/* border-bottom: 2px solid var(--color-white); */
+	border-bottom: 2px solid #ffffff;
+	height: 77px;
+}
+.app-header__main .app-container {
+	overflow: inherit;
+}
+.app-header .app-container {
+	height: 100%;
+}
+.app-header__main__logo-holder {
+	height: 100%;
+	border-right: 2px solid #ffffff;
+}
+img {
+	vertical-align: middle;
+	border-style: none;
+}
+.app-header__main__logo-holder .logo {
+	height: 60px;
+	margin-right: 40px;
+}
+.app-header__main__actions-holder {
+	height: 100%;
+}
+.app-header .main-link-button.white-button {
+	background-color: #fff;
+}
+.app-header .main-link-button {
+	height: 100%;
+	background-color: var(--color-primary-300);
+	place-content: center;
+	align-items: flex-start;
+	padding: 0 20px;
+	user-select: none;
+	transition: background-color .2s ease-in-out;
+	cursor: pointer;
+}
+.app-header__main__logo-holder .logo-flag {
+	height: 100%;
+	margin-right: 30px;
+}
+.app-header__main__logo-holder {
+	height: 100%;
+	border-right: 2px solid var(--color-white);
+}
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+.app-header__menu {
+	height: 52px;
+	position: relative;
+}
+.app-header .app-container {
+	height: 100%;
+}
+.app-header__menu nav {
+	height: 100%;
+}
+.app-header__menu nav ul {
+	width: max-content;
+	border-right: 1px solid var(--color-tertiary-blue);
+	border-left: 1px solid var(--color-tertiary-blue);
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.app-header__menu__language {
+	height: 100%;
+}
+.app-header__menu__language a {
+	margin-left: 5px;
+	text-decoration: none;
+	color: var(--color-white);
+	font-size: 12px;
+	font-weight: 300;
+}
