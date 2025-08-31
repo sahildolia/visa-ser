@@ -1,0 +1,44 @@
+.e-application-landing-page .header-section {
+    height: 400px;
+    background-image: url("../../../assets/Rectangle 2995.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.e-application-landing-page .header-section .app-container {
+    height: 100%;
+    max-width: 890px;
+    padding: 0 20px;
+    align-content: center;
+}
+.app-page-section .app-container {
+    padding: 0 100px;
+    position: relative;
+    z-index: 1;
+}
+.app-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.e-application-landing-page .header-section h1 {
+    /* color: var(--color-white); */
+    color: #fff;
+    margin-bottom: 24px;
+    text-align: center;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #253956;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+.e-application-landing-page .header-section p {
+    /* color: var(--color-white); */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}

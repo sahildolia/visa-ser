@@ -19,21 +19,21 @@ function Navbar() {
             </div>
 
             {/* Language Switcher */}
-            <div className="app-header__menu__language d-flex align-items-center">
+            {/* <div className="app-header__menu__language d-flex align-items-center">
               <a href="/Home/SetLanguage?culture=sr-Cyrl-RS&returnUrl=/">ЋИР</a>
               <a href="/Home/SetLanguage?culture=sr-Latn-RS&returnUrl=/">LAT</a>
               <a href="/Home/SetLanguage?culture=en-US&returnUrl=/">ENG</a>
               <i className="fa-solid fa-globe ms-2"></i>
-            </div>
+            </div> */}
 
             {/* Actions */}
             <div className="app-header__main__actions-holder d-flex align-items-center">
               <div className="main-link-button white-button">
                 <a href="/home">Log in</a>
               </div>
-              <div className="mobile-menu-button ms-3">
+              {/* <div className="mobile-menu-button ms-3">
                 <i className="fa-solid fa-bars"></i>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -42,9 +42,9 @@ function Navbar() {
         <div className="app-header__menu">
           <div className="app-container">
             <nav className="d-flex justify-content-between">
-              <div className="main-link-button white-button profile-button">
+              {/* <div className="main-link-button white-button profile-button">
                 <a href="/home">Log in</a>
-              </div>
+              </div> */}
 
               <ul className="d-flex align-items-center"></ul>
 
@@ -60,6 +60,7 @@ function Navbar() {
           </div>
         </div>
       </div>
+
     </header>
   )
 }
