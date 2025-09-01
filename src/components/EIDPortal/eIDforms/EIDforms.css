@@ -1,0 +1,295 @@
+/* EIDforms.css */
+.breadcrumbs {
+    padding: 5px 0;
+    position: relative;
+    z-index: 2;
+    line-height: 24px;
+    padding: 13px 0;
+    background: #eee;
+    color: #9b9b9b;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+.breadcrumbs h1 {
+    color: #253965;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0;
+    line-height: 50px;
+    padding: 5px 0 5px;
+    margin-top: 0;
+}
+
+/*  */
+
+.section-auth-style {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nav-tabs {
+    border-bottom: 1px solid #fff !important;
+    display: flex;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: 100%;
+}
+.nav-tabs>li {
+    border: 1px solid #253965;
+    width: 33.33%;
+    margin-bottom: -1px;
+    background: #fff;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+li {
+    list-style: none;
+}
+.nav-tabs>li.active {
+    background-color: #253965;
+    color: #fff;
+}
+.nav-tabs>li.active>button, .nav-tabs>li.active>button:focus, .nav-tabs>li.active>button:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #253965;
+    font-size: 1rem;
+    border-bottom-color: transparent;
+}
+.nav-tabs>li>button {
+    margin-right: 0 !important;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 0 !important;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: #253965;
+    background: transparent;
+}
+.nav>li>button {
+    position: relative;
+    display: block;
+}
+.align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.nav-tabs>li.active>button, .nav-tabs>li.active>button:focus, .nav-tabs>li.active>button:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #253965;
+    font-size: 1rem;
+    border-bottom-color: transparent;
+}
+.nav-tabs li.active .icon-user.active {
+    background: url('../../../assets/icon-user-selected.svg') !important;
+}
+.icon-user {
+    background: url('../../../assets/icon-user.svg') !important;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-top: 4px;
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: -1px;
+}
+.icon-certificate {
+    margin-top: 0px;
+}
+.icon-certificate {
+    background: url('../../../assets/icon-certificate.svg') !important;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-top: 4px;
+}
+.nav-tabs li.active .icon-certificate.active {
+    background: url('../../../assets/icon-certificate-selected.svg') !important;
+}
+.nav-tabs li.active .icon-mobile.active {
+    background: url('../../../assets/icon-mobile-selected.svg') !important;
+}
+.icon-mobile {
+    background: url('../../../assets/icon-mobile.svg') !important;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+/* Additional styles for tab text */
+.nav-tabs>li>button .up-span {
+    color: #253965;
+    font-weight: 500;
+}
+.nav-tabs>li.active>button .up-span {
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-tabs>li {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .w-md-17, .w-md-83 {
+        width: auto !important;
+    }
+    
+    .nav-tabs>li>button {
+        padding: 10px;
+    }
+}
+
+/*  */
+
+.user-lg {
+    background: url('../../../assets/icon-user-lg.svg') !important;
+    height: 55px;
+    width: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.up-link {
+    font-weight: 700;
+    text-decoration: underline !important;
+}
+.gen-form .form-row {
+    padding-left: 22px !important;
+    margin-bottom: 15px !important;
+}
+.gen-form .form-row label {
+    margin-bottom: 4px;
+    color: #253965;
+    display: block;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.up-style-desc {
+    font-size: 0.9rem;
+    color: #253965;
+}
+.gen-form .form-row .ic {
+    border: 1px solid #253965;
+}
+.gen-form .form-row .ic {
+    position: relative;
+    width: 100%;
+    border: 1px solid #253965;
+
+}
+.gen-form .form-row {
+    padding-left: 22px !important;
+    margin-bottom: 15px !important;
+}
+.gen-form .form-row label {
+    margin-bottom: 4px;
+    color: #253965;
+    display: block;
+}
+.gen-form .form-row input[type=password] {
+    width: calc(100% - 100px);
+}
+.gen-form .form-row input[type=email], .gen-form .form-row input[type=password], .gen-form .form-row input[type=text], .gen-form .form-row textarea {
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: 1px solid #253965;
+    display: block;
+    height: 50px;
+    padding: 0 16px;
+    color: #253965;
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.gen-form .form-row .show-pw {
+    position: absolute;
+    font-size: .86rem;
+    text-transform: uppercase;
+    line-height: 16px;
+    height: 16px;
+    top: 39px;
+    right: 46px;
+    color: #253965;
+}
+.aetButtonMargins {
+    margin: 24px !important;
+}
+.aetButton-green {
+    background: #017932 !important;
+}
+.aetButton {
+    width: 100%;
+    color: #fff;
+    background: #253965;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 14px 0;
+    display: inline-block;
+    text-align: center;
+    border-style: none;
+}
+.aetB-d-flex {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+.align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.first-layer {
+    opacity: 1;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 16px;
+    background: url(../../../assets/layer-1.svg) no-repeat 50% 50%/20px 20px !important;
+    background-color: white !important;
+    flex-shrink: 0 !important;
+    margin-right: 10px;
+}
+.password-recoved-link {
+    color: #253965;
+}
+.up-link {
+    font-weight: 700;
+    text-decoration: underline !important;
+}
+.up-style {
+    font-size: 1rem;
+    color: #253965;
+    padding: 5px;
+    /* height: 50px; */
+}
