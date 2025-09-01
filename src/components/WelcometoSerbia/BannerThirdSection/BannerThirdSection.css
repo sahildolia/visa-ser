@@ -78,7 +78,8 @@ a {
 }
 .e-application-landing-page .banner-section .app-container::after {
     content: "\f0ac";
-    font-family: "Font Awesome 6 Pro";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
     position: absolute;
     display: block;
     top: -150px;
@@ -86,4 +87,75 @@ a {
     color: #fff;
     font-size: 330px;
     left: -20px;
+}
+/*  */
+.e-application-landing-page .support-section {
+    /* background-color: var(--color-primary-200); */
+    background-color: #CDD7E7;
+    margin-top: 80px;
+    padding: 60px 0;
+}
+.e-application-landing-page .support-section .app-container {
+    max-width: 890px;
+    padding: 0 20px;
+}
+.app-page-section .app-container {
+    padding: 0 100px;
+    position: relative;
+    z-index: 1;
+}
+.app-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.e-application-landing-page .support-section__main {
+    padding: 0 100px;
+}
+.e-application-landing-page .support-section__main h4 {
+    text-align: center;
+    /* color: var(--color-primary-300); */
+    color: #4A90E2;
+}
+.e-application-landing-page .support-section__main i {
+    text-align: center;
+    display: block;
+    /* color: var(--color-primary-400); */
+    color: #253956;
+    margin-top: 20px;
+    font-size: 77px;
+}
+.e-application-landing-page .support-section__content {
+    padding-right: 60px;
+}
+.e-application-landing-page .support-section__content p {
+    letter-spacing: -.16px;
+    margin-bottom: 24px;
+}
+.app-btn.app-btn-dark {
+    /* background-color: var(--color-primary-400); */
+    /* color: var(--color-white); */
+    background-color: #253956;
+    color: #ffffff;
+}
+.app-btn {
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: var(--color-white);
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0 20px;
+    line-height: 44px;
+    height: 44px;
+    color: var(--color-primary-400);
+    font-family: Montserrat,sans-serif;
+    display: inline-block;
+    white-space: nowrap;
+    display: block;
+    transition: background-color .2s ease-in-out;
 }

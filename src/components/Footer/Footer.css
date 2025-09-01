@@ -1,0 +1,95 @@
+footer {
+    background-color: var(--color-white);
+    position: relative;
+}
+.e-application-footer .e-application-footer__main {
+    height: 40px;
+    /* background-color: var(--color-primary-400); */
+    background-color: #253956;
+}
+.e-application-footer .e-application-footer__main .app-container {
+    height: 100%;
+}
+.app-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.e-application-footer .e-application-footer__main .app-container .e-application-footer__main__back-to-top {
+    height: 100%;
+    line-height: 35px;
+    padding-left: 10px;
+    padding-right: 3px;
+    /* border-top: 5px solid var(--color-primary-300); */
+    border-top: 2px solid #4A90E2;
+    /* color: var(--color-primary-300); */
+    color: #4A90E2;
+    user-select: none;
+    cursor: pointer;
+}
+.e-application-footer .e-application-footer__main .app-container .e-application-footer__main__back-to-top span {
+    font-size: 13px;
+    font-weight: 900;
+    margin-right: 3px;
+}
+.e-application-footer .e-application-footer__main .app-container .e-application-footer__main__back-to-top i {
+    font-size: 15px;
+}
+.e-application-footer .e-application-footer__content {
+    height: 200px;
+}
+.e-application-footer .e-application-footer__content .app-container {
+    height: 100%;
+}
+.app-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.e-application-footer .e-application-footer__content .app-container .e-application-footer__content__logo {
+    max-width: 60px;
+    width: 100%;
+    height: 100%;
+}
+.e-application-footer .e-application-footer__content .app-container .e-application-footer__content__logo img {
+    width: 100%;
+}
+.e-application-footer .e-application-footer__content .app-container .e-application-footer__content__content {
+    max-width: 460px;
+    width: 100%;
+    padding-left: 16px;
+}
+.e-application-footer .e-application-footer__content .app-container .e-application-footer__content__content .title {
+    font-size: 26px;
+    font-weight: 900;
+}
+p {
+    font-size: 16px;
+    font-weight: 400;
+    /* color: var(--color-primary-400); */
+    color: #253956;
+    margin: 0;
+}
+.e-application-footer .e-application-footer__content .app-container .e-application-footer__content__content .subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    /* color: var(--color-secondary-500); */
+    color: #4f4f4f;
+    margin-bottom: 22px;
+}
+.e-application-footer .e-application-footer__content .app-container .e-application-footer__content__content .text {
+    letter-spacing: -.136px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 600;
+    /* color: var(--color-secondary-300); */
+    color: #A0A0A0;
+}
+.e-application-footer .e-application-footer__content .app-container .e-application-footer__content__content .text a {
+    color:#253956;
+    text-decoration: underline;
+}

@@ -41,7 +41,7 @@ function BannerThirdSection() {
           </div>
         </section>
 
-        <section className="app-page-section support-section">
+        {/* <section className="app-page-section support-section">
           <div className="app-container" fxlayout="row" fxlayoutalign="start center">
             <div className="support-section__main">
               <h4>Support</h4>
@@ -57,7 +57,26 @@ function BannerThirdSection() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
+        <section className="app-page-section support-section py-5">
+  <div className="container d-flex align-items-center">
+    <div className="support-section__main d-flex align-items-center me-4">
+      <h4 className="me-2 mb-0">Support</h4>
+      <i className="fa-regular fa-envelope-open-text fa-2x"></i>
+    </div>
+
+    <div className="support-section__content">
+      <p className="fw-semibold mb-3">
+        If you have additional questions about the visa regime, permits
+        and electronic services, please contact us:
+      </p>
+      <a href="mailto:office@ite.gov.rs">
+        <button className="btn btn-dark">Contact</button>
+      </a>
+    </div>
+  </div>
+</section>
+
 </div>
     </>
   )
