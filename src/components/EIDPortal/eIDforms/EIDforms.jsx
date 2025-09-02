@@ -1,6 +1,6 @@
 // EIDforms.jsx
 import { useState } from "react";
-import './eIDforms.css'
+import './EIDforms.css'
 import { useNavigate } from "react-router-dom";
 
 function EIDforms({ onHandleNoDomain }) {
