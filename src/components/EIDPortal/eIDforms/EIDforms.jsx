@@ -1,8 +1,10 @@
 // EIDforms.jsx
 import { useState } from "react";
 import './eIDforms.css'
+import { useNavigate } from "react-router-dom";
 
 function EIDforms({ onHandleNoDomain }) {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("home");
   const [username1, setUsername1] = useState("");
   const [password1, setPassword1] = useState("");
@@ -10,15 +12,15 @@ function EIDforms({ onHandleNoDomain }) {
   const [usernameCid, setUsernameCid] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
-  function signInUP(e) {
-    e.preventDefault();
-    if (typeof onHandleNoDomain === "function") {
-      onHandleNoDomain("LOCAL", "up", username1, password1, "");
-    } else {
-      console.log("signInUP", { username1, password1, sessionDataKey });
-      alert("signInUP: check console (or pass onHandleNoDomain prop)");
-    }
-  }
+  // function signInUP(e) {
+  //   e.preventDefault();
+  //   if (typeof onHandleNoDomain === "function") {
+  //     onHandleNoDomain("LOCAL", "up", username1, password1, "");
+  //   } else {
+  //     console.log("signInUP", { username1, password1, sessionDataKey });
+  //     alert("signInUP: check console (or pass onHandleNoDomain prop)");
+  //   }
+  // }
 
   function signInMFASC(e) {
     e.preventDefault();
@@ -39,7 +41,20 @@ function EIDforms({ onHandleNoDomain }) {
       alert("signInCID: check console (or pass onHandleNoDomain prop)");
     }
   }
+  function signInUP(e) {
+    e.preventDefault();
+    
+    // Your existing logic
+    if (typeof onHandleNoDomain === "function") {
+      onHandleNoDomain("LOCAL", "up", username1, password1, "");
+    } else {
+      console.log("signInUP", { username1, password1, sessionDataKey });
+    }
+    localStorage.setItem('username', username1);
 
+    // Redirect to PSRequests page
+    navigate("/ps-requests");
+  }
   return (
     <>
       <section className="breadcrumbs">

@@ -1,3 +1,4 @@
+/* PSRequests.css */
 .breadcrumbs {
     padding: 5px 0;
     position: relative;
@@ -21,4 +22,124 @@
     line-height: 50px;
     padding: 5px 0 5px;
     margin-top: 0;
+}
+
+.requests-section {
+    padding: 30px 0;
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 200px);
+}
+
+.requests-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.request-row {
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+    transition: background-color 0.2s;
+}
+
+.request-row:hover {
+    background-color: #f9f9f9;
+}
+
+.request-row.header-row {
+    background-color: #253965;
+    color: white;
+    font-weight: 600;
+}
+
+.request-cell {
+    flex: 1;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+}
+
+.header-row .request-cell {
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.status-badge.approved {
+    background-color: #e6f4ea;
+    color: #137333;
+}
+
+.status-badge.processing {
+    background-color: #fef7e0;
+    color: #b06000;
+}
+
+.attachment-link {
+    color: #1a73e8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.attachment-link:hover {
+    text-decoration: underline;
+}
+
+.open-request-btn {
+    background-color: #253965;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.open-request-btn:hover {
+    background-color: #1c2c4d;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .requests-container {
+        overflow-x: auto;
+    }
+    
+    .request-row {
+        flex-wrap: wrap;
+    }
+    
+    .request-cell {
+        flex: 1 0 50%;
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .request-cell:before {
+        content: attr(data-label);
+        font-weight: 600;
+        width: 50%;
+        padding-right: 10px;
+    }
+    
+    .header-row {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .request-cell {
+        flex: 1 0 100%;
+    }
 }
