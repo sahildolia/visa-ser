@@ -1,0 +1,101 @@
+.app-header {
+	/* background-color: var(--color-primary-400); */
+	background-color: #253956;
+	position: sticky;
+	z-index: 9999;
+	top: 0;
+}
+.app-header__main {
+	/* border-bottom: 2px solid var(--color-white); */
+	border-bottom: 2px solid #ffffff;
+	height: 77px;
+}
+.app-header__main .app-container {
+	overflow: inherit;
+}
+.app-header .app-container {
+	height: 100%;
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
+}
+.app-header__main__logo-holder .logo {
+	height: 60px;
+	margin-right: 40px;
+}
+.app-header__main__actions-holder {
+	height: 100%;
+}
+.app-header .main-link-button.white-button {
+	background-color: #fff;
+}
+.app-header .main-link-button {
+	height: 100%;
+	background-color: var(--color-primary-300);
+	place-content: center;
+	align-items: flex-start;
+	padding: 0 20px;
+	user-select: none;
+	transition: background-color .2s ease-in-out;
+	cursor: pointer;
+}
+.app-header__main__logo-holder .logo-flag {
+	height: 100%;
+	margin-right: 30px;
+}
+.app-header__menu nav .profile-button {
+    padding: 15px;
+    width: 100%;
+    place-content: center flex-start;
+    align-items: center;
+    display: none;
+    position: relative;
+}
+.app-header__main__logo-holder {
+	height: 100%;
+	border-right: 2px solid #fff;
+}
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+.app-header__menu {
+	height: 52px;
+	position: relative;
+}
+.app-header .app-container {
+	height: 100%;
+}
+.app-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.app-header__menu nav {
+	height: 100%;
+}
+.app-header__menu nav ul {
+	width: max-content;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.app-header__menu__language {
+	height: 100%;
+}
+.app-header__menu__language a {
+	margin-left: 5px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+}
+.app-header__menu__language i {
+    font-size: 10px;
+    margin: 0 10px;
+    color: #4A90E2;
+}
