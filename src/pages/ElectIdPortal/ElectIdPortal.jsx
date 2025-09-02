@@ -1,6 +1,6 @@
 import React from 'react'
 import EidHeader from '../../components/EIDPortal/EidHeader/EidHeader'
-import EIDforms from '../../components/EIDPortal/eIDforms/eIDforms'
+import EIDforms from '../../components/EIDPortal/EIDforms/EIDforms'
 import Footer from '../../components/Footer/Footer'
 
 function ElectIdPortal() {
