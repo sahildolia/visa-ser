@@ -30,19 +30,6 @@ import SentRequests from './pages/SentRequests/SentRequests';
 function App() {
   return (
     <Router>
-        {/* Navigation Header */}
-    
-            <ul className="nav-menu d-flex bg-dark text-light justify-content-around">
-              <li className="nav-item">
-                <Link to="/" className="nav-link">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/elect-id" className="nav-link">Electronic ID</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/ps-requests" className="nav-link">PS Requests</Link>
-              </li>
-            </ul>
         {/* Main Content Area */}
           <Routes>
             <Route path="/" element={<Home />} />

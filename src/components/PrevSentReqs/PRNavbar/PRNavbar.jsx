@@ -52,9 +52,9 @@ function PRNavbar() {
               <div className="app-header__menu__buttons d-flex align-items-center"></div>
               <div className="d-flex justify-content-between w-100">
                 <div className="app-header__menu__language d-flex align-items-center">
-                  <a href="/Home/SetLanguage?culture=sr-Cyrl-RS&returnUrl=/">Home Page</a> &nbsp;
-                  <a href="/Home/SetLanguage?culture=sr-Latn-RS&returnUrl=/">Visa C</a> &nbsp;
-                  <a href="/Home/SetLanguage?culture=en-US&returnUrl=/">Visa D</a> &nbsp;
+                  <Link to="/" className='pr-24'>Home Page</Link> &nbsp;
+                  <Link to="/" className='pr-24'>Visa C</Link> &nbsp;
+                  <Link to="/" className='pr-24'>Visa D</Link> &nbsp;
                   <Link to="/ps-requests">My requests</Link>
                 </div>
                 <div className="app-header__menu__language d-flex align-items-center">

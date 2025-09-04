@@ -4,13 +4,15 @@ import WelcomeUserPr from '../../components/PrevSentReqs/WelcomeUserPr/WelcomeUs
 import BannerSecSection from '../../components/WelcometoSerbia/BannerSecSection/BannerSecSection'
 import BannerThirdSection from '../../components/WelcometoSerbia/BannerThirdSection/BannerThirdSection'
 import Footer from '../../components/Footer/Footer'
+import SecBannerSec from '../../components/PrevSentReqs/SecBannerSec/SecBannerSec'
 
 function WelcomeUser() {
   return (
     <>
       <PRNavbar/>
       <WelcomeUserPr/>
-      <BannerSecSection/>
+      {/* <BannerSecSection/> */}
+      <SecBannerSec/>
       <BannerThirdSection/>
       <Footer/>
     </>
