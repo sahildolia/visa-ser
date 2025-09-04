@@ -31,16 +31,19 @@
     width: 100%;
     max-width: 250px;
 }
-h3 {
+.main-section__title h3 {
     font-size: 34px;
-    font-weight: 800;
+    font-weight: 600;
     /* color: var(--color-primary-400); */
     color: #253956;
     margin: 0;
     padding: 0;
     line-height: 1.2;
 }
-
+.main-section__content__item h4 {
+    font-size: 28px;
+    font-weight: 600;
+}
 .e-application-landing-page .main-section__content {
     padding-left: 60px;
 }
@@ -109,8 +112,9 @@ a {
 a.app-hyperlink {
     font-size: 16px;
     font-weight: 700;
-    color: var(--color-primary-300);
-    text-decoration: underline;
+    /* color: var(--color-primary-300); */
+    color: #4A90E2;
+    text-decoration: underline!important;
     transition: color .2s ease-in-out;
 }
 .e-application-landing-page .main-section__content .main-section__content__item+.main-section__content__item {

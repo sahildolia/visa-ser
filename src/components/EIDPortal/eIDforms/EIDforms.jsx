@@ -137,7 +137,7 @@ function EIDforms({ onHandleNoDomain }) {
                   <div className="row justify-content-center mb-3">
                     <div className="col-sm-12 col-md-8 text-center">
                       <p className="up-style">
-                        Login with a username and password is a basic security login.
+                        Login with a username and password is a basic security login. &nbsp;
                         <a href="https://eid.gov.rs/en-US/user-name-and-password-login" className="up-link" target="_blank" rel="noopener noreferrer"> Find out more. </a>
                       </p>
                     </div>
@@ -152,7 +152,7 @@ function EIDforms({ onHandleNoDomain }) {
                           <div className="form-group form-row mb-3">
                             <label htmlFor="username1">Username:</label>
                             <div className="up-style-desc mb-1">(Email address used for registration)</div>
-                            <div className="ic">
+                            <div className="ic pr-12">
                               <input
                                 id="username1"
                                 name="username1"
@@ -188,7 +188,7 @@ function EIDforms({ onHandleNoDomain }) {
                         <div className="col-sm-12 col-md-6">
                           <div className="form-group form-row mb-3">
                             <label htmlFor="password1">Password:</label>
-                            <div className="ic">
+                            <div className="ic pr-12">
                               <input
                                 id="password1"
                                 name="password1"
@@ -255,7 +255,7 @@ function EIDforms({ onHandleNoDomain }) {
                   <div className="row mt-3">
                     <div className="col-sm-12 col-md-6 text-center mx-auto">
                       <p className="up-style text-center">
-                        Don't have an account at eid.gov.rs? Register
+                        Don't have an account at eid.gov.rs? Register &nbsp;
                         <a href="https://eid.gov.rs/en-US/start" className="up-link" target="_blank" rel="noopener noreferrer">here.</a>
                       </p>
                     </div>
@@ -309,7 +309,7 @@ function EIDforms({ onHandleNoDomain }) {
                   <div className="row mt-3">
                     <div className="col-sm-12 col-md-6 text-center mx-auto">
                       <p className="up-style">
-                        Don't have an account at eid.gov.rs? Register
+                        Don't have an account at eid.gov.rs? Register &nbsp;
                         <a className="up-link" href="https://eid.gov.rs/en-US/start" target="_blank" rel="noopener noreferrer">here.</a>
                       </p>
                     </div>
@@ -344,7 +344,7 @@ function EIDforms({ onHandleNoDomain }) {
                           <div className="form-group form-row mb-3">
                             <label htmlFor="usernameCid">Username:</label>
                             <div className="up-style-desc mb-1">(Email address used for registration)</div>
-                            <div className="ic">
+                            <div className="ic pr-12">
                               <input
                                 id="usernameCid"
                                 name="usernameCid"
@@ -383,7 +383,7 @@ function EIDforms({ onHandleNoDomain }) {
                   <div className="row mt-3">
                     <div className="col-sm-12 col-md-6 text-center mx-auto">
                       <p className="link-bottom">
-                        Don't have an account at eid.gov.rs? Register
+                        Don't have an account at eid.gov.rs? Register &nbsp;
                         <a href="#" className="up-link">here.</a>
                       </p>
                       <p className="link-bottom">

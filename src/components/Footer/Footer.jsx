@@ -28,7 +28,7 @@ function Footer() {
 
       <div className="e-application-footer__content__content">
         <p className="title mb-1">welcometoserbia.gov.rs</p>
-        <p className="subtitle mb-2">Welcome to Serbia</p>
+        <p className="subtitle mb-2 ff-M">Welcome to Serbia</p>
         <p className="text mb-2">
           Web presentation is licensed according to license conditions&nbsp;
           <a

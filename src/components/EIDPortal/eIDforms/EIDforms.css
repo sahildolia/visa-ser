@@ -311,3 +311,12 @@ label {
     -webkit-transition: .3s;
     transition: .3s;
 }
+button.nav-link.up-style {
+    padding: 5px 10px 5px !important;
+}
+.ic input{
+    border-radius: 0;
+}
+.pr-12{
+padding-right: 12px;
+}

@@ -71,7 +71,7 @@ function BannerThirdSection() {
                 and electronic services, please contact us:
               </p>
               <a href="mailto:office@ite.gov.rs">
-                <button className="btn btn-dark text-light">Contact</button>
+                <button className="app-btn app-btn-dark text-light">Contact</button>
               </a>
             </div>
           </div>
