@@ -44,7 +44,7 @@ function PSRequests() {
           <div className="requests-container">
             {/* Table Header */}
             <div className="request-row header-row">
-              <div className="request-cell">Request number</div>
+              <div className="request-cell" style={{textAlign: "justify"}}>Request number</div>
               <div className="request-cell">Visa request ID</div>
               <div className="request-cell">Foreign Citizen's Reg. No</div>
               <div className="request-cell">First and last name</div>
@@ -75,7 +75,7 @@ function PSRequests() {
                   {request.office}
                 </div>
                 <div className="request-cell" data-label="Status">
-                  <span className={`status-badge ${request.status.toLowerCase().includes('approved') ? 'approved' : 'processing'}`}>
+                  <span className={`status-badge ${request.status.toLowerCase().includes('approved') ? 'approved' : 'approved'}`}>
                     {request.status}
                   </span>
                 </div>

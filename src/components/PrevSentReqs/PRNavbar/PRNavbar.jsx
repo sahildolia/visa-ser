@@ -46,14 +46,14 @@ function PRNavbar() {
         <div className="app-header__menu">
           <div className="app-container">
             <nav className="d-flex justify-content-between" style={{width: "82%", paddingLeft: "29%"}}>
-              <ul className="d-flex align-items-center"></ul>
+              {/* <ul className="d-flex align-items-center"></ul> */}
 
               <div className="app-header__menu__buttons d-flex align-items-center"></div>
               <div className="d-flex justify-content-between w-100">
                 <div className="app-header__menu__language d-flex align-items-center">
-                  <a href="/Home/SetLanguage?culture=sr-Cyrl-RS&returnUrl=/">Home Page</a>
-                  <a href="/Home/SetLanguage?culture=sr-Latn-RS&returnUrl=/">Visa C</a>
-                  <a href="/Home/SetLanguage?culture=en-US&returnUrl=/">Visa D</a>
+                  <a href="/Home/SetLanguage?culture=sr-Cyrl-RS&returnUrl=/">Home Page</a> &nbsp;
+                  <a href="/Home/SetLanguage?culture=sr-Latn-RS&returnUrl=/">Visa C</a> &nbsp;
+                  <a href="/Home/SetLanguage?culture=en-US&returnUrl=/">Visa D</a> &nbsp;
                   <a href="/Home/SetLanguage?culture=en-US&returnUrl=/">My requests</a>
                 </div>
                 <div className="app-header__menu__language d-flex align-items-center">

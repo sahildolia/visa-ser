@@ -48,14 +48,14 @@
 }
 
 .request-row.header-row {
-    background-color: #253965;
-    color: white;
+    /* background-color: #253965; */
+    color: #323232;
     font-weight: 600;
 }
 
 .request-cell {
     flex: 1;
-    padding: 15px 10px;
+    padding: 0px 1px;
     display: flex;
     align-items: center;
     word-break: break-word;
@@ -69,13 +69,13 @@
 
 .status-badge {
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 0px;
     font-size: 0.85rem;
     font-weight: 500;
 }
 
 .status-badge.approved {
-    background-color: #137333;
+    background-color: #1fb91a;
     color: #e6f4ea;
 }
 
