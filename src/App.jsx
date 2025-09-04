@@ -31,7 +31,7 @@ function App() {
     <Router>
         {/* Navigation Header */}
     
-            {/* <ul className="nav-menu d-flex bg-dark text-light justify-content-around">
+            <ul className="nav-menu d-flex bg-dark text-light justify-content-around">
               <li className="nav-item">
                 <Link to="/" className="nav-link">Home</Link>
               </li>
@@ -41,7 +41,7 @@ function App() {
               <li className="nav-item">
                 <Link to="/ps-requests" className="nav-link">PS Requests</Link>
               </li>
-            </ul> */}
+            </ul>
         {/* Main Content Area */}
           <Routes>
             <Route path="/" element={<Home />} />

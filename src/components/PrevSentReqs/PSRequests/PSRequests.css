@@ -75,13 +75,13 @@
 }
 
 .status-badge.approved {
-    background-color: #e6f4ea;
-    color: #137333;
+    background-color: #137333;
+    color: #e6f4ea;
 }
 
 .status-badge.processing {
-    background-color: #fef7e0;
-    color: #b06000;
+    background-color: #b06000;
+    color: #fef7e0;
 }
 
 .attachment-link {
