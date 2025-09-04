@@ -1,5 +1,6 @@
 import React from 'react'
 import './BannerSecSection.css'
+import { Link } from 'react-router-dom'
 function BannerSecSection() {
   return (
     <>
@@ -22,9 +23,9 @@ function BannerSecSection() {
                   fxlayout="row"
                   fxlayoutalign="start center"
                 >
-                  <a href="/home">
+                  <Link to="/elect-id">
                     <button className="app-btn app-btn-dark">Login</button>
-                  </a>
+                  </Link>
                   <a
                     style={{ marginLeft: "8%" }}
                     className="app-hyperlink align-self-center"
