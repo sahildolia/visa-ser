@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { Image } from 'react-bootstrap'
 import "./PRNavbar.css"
+import { Link } from 'react-router-dom';
 
 function PRNavbar() {
   const [username, setUsername] = useState('');
@@ -54,7 +55,7 @@ function PRNavbar() {
                   <a href="/Home/SetLanguage?culture=sr-Cyrl-RS&returnUrl=/">Home Page</a> &nbsp;
                   <a href="/Home/SetLanguage?culture=sr-Latn-RS&returnUrl=/">Visa C</a> &nbsp;
                   <a href="/Home/SetLanguage?culture=en-US&returnUrl=/">Visa D</a> &nbsp;
-                  <a href="/Home/SetLanguage?culture=en-US&returnUrl=/">My requests</a>
+                  <Link to="/ps-requests">My requests</Link>
                 </div>
                 <div className="app-header__menu__language d-flex align-items-center">
                   <a href="/Home/SetLanguage?culture=sr-Cyrl-RS&returnUrl=/">ЋИР</a>

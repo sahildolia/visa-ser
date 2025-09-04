@@ -2,6 +2,7 @@
 import React from 'react'
 import PRNavbar from '../PRNavbar/PRNavbar'
 import './PSRequests.css'
+import WelcomeUserPr from '../WelcomeUserPr/WelcomeUserPr';
 
 function PSRequests() {
   // Sample data for demonstration
@@ -32,7 +33,9 @@ function PSRequests() {
 
   return (
     <>
-      <PRNavbar/>
+      {/* <PRNavbar/>
+      <WelcomeUserPr/> */}
+
       <section className="breadcrumbs">
         <div className="container">
           <h1 className='text-center'>List of previously sent requests</h1>

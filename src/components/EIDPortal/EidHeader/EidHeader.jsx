@@ -91,7 +91,7 @@ function EidHeader() {
       </div>
 
       {/* Settings */}
-      <div className="settings">
+      {/* <div className="settings">
         <div className="settings-box">
           <div className="zoom-note">
             Use
@@ -142,7 +142,7 @@ function EidHeader() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 </header>

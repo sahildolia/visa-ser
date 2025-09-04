@@ -53,7 +53,7 @@ function EIDforms({ onHandleNoDomain }) {
     localStorage.setItem('username', username1);
 
     // Redirect to PSRequests page
-    navigate("/ps-requests");
+    navigate("/welcome-user");
   }
   return (
     <>
