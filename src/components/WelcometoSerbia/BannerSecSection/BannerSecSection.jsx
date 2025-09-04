@@ -1,6 +1,6 @@
 import React from 'react'
 import './BannerSecSection.css'
-import { Link } from 'react-router-dom'
+import { Link, Links } from 'react-router-dom'
 function BannerSecSection() {
   return (
     <>
@@ -26,13 +26,13 @@ function BannerSecSection() {
                   <Link to="/elect-id">
                     <button className="app-btn app-btn-dark">Login</button>
                   </Link>
-                  <a
+                  <Link
                     style={{ marginLeft: "8%" }}
                     className="app-hyperlink align-self-center"
-                    href="https://registracija.eid.gov.rs/en-US/creationaccountwithusernameandpassword?userCategory=Foreign"
+                    to="/"
                   >
                     Register an account
-                  </a>
+                  </Link>
                 </div>
               </div>
 
