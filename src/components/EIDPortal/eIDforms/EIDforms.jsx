@@ -75,7 +75,7 @@ function EIDforms({ onHandleNoDomain }) {
                   aria-selected={activeTab === "home"}
                 >
                   <div className="d-flex align-items-center">
-                    <div className="text-center w-md-17">
+                    <div className="text-center w-md-17 pe-2">
                       <div className={`icon-user ${activeTab === "home" ? "active" : ""}`} />
                     </div>
                     <div className="w-md-83">
@@ -94,7 +94,7 @@ function EIDforms({ onHandleNoDomain }) {
                   aria-selected={activeTab === "menu1"}
                 >
                   <div className="d-flex align-items-center">
-                    <div className="text-center w-md-17">
+                    <div className="text-center w-md-17 pe-2">
                       <div className={`icon-certificate ${activeTab === "menu1" ? "active" : ""}`} />
                     </div>
                     <div className="w-md-83">
@@ -113,7 +113,7 @@ function EIDforms({ onHandleNoDomain }) {
                   aria-selected={activeTab === "menu2"}
                 >
                   <div className="d-flex align-items-center">
-                    <div className="text-center w-md-17">
+                    <div className="text-center w-md-17 pe-2">
                       <div className={`icon-mobile ${activeTab === "menu2" ? "active" : ""}`} />
                     </div>
                     <div className="w-md-83">
@@ -149,7 +149,7 @@ function EIDforms({ onHandleNoDomain }) {
                     <div className="col-sm-12">
                       <div className="row justify-content-center">
                         <div className="col-sm-12 col-md-6">
-                          <div className="form-group mb-3">
+                          <div className="form-group form-row mb-3">
                             <label htmlFor="username1">Username:</label>
                             <div className="up-style-desc mb-1">(Email address used for registration)</div>
                             <div className="ic">
@@ -165,12 +165,28 @@ function EIDforms({ onHandleNoDomain }) {
                               />
                             </div>
                           </div>
+                          {/* <div className="form-group mb-3">
+                            <label htmlFor="username1">Username:</label>
+                            <div className="up-style-desc mb-1">(Email address used for registration)</div>
+                            <div className="ic">
+                              <input
+                                id="username1"
+                                name="username1"
+                                type="text"
+                                placeholder=""
+                                className="form-control"
+                                required
+                                value={username1}
+                                onChange={(e) => setUsername1(e.target.value)}
+                              />
+                            </div>
+                          </div> */}
                         </div>
                       </div>
 
                       <div className="row justify-content-center">
                         <div className="col-sm-12 col-md-6">
-                          <div className="form-group mb-3">
+                          <div className="form-group form-row mb-3">
                             <label htmlFor="password1">Password:</label>
                             <div className="ic">
                               <input
@@ -188,7 +204,7 @@ function EIDforms({ onHandleNoDomain }) {
                             <button
                               type="button"
                               id="showpass"
-                              className="btn btn-sm btn-link show-pw p-0"
+                              className="btn btn-sm btn-link show-pw p-0 position-static"
                               style={{ cursor: "pointer" }}
                               onClick={() => setShowPassword((s) => !s)}
                             >
@@ -237,9 +253,9 @@ function EIDforms({ onHandleNoDomain }) {
                   </div>
 
                   <div className="row mt-3">
-                    <div className="col-sm-12 col-md-6 text-center">
-                      <p className="up-style">
-                        Don't have an account at eid.gov.rs? Register{" "}
+                    <div className="col-sm-12 col-md-6 text-center mx-auto">
+                      <p className="up-style text-center">
+                        Don't have an account at eid.gov.rs? Register
                         <a href="https://eid.gov.rs/en-US/start" className="up-link" target="_blank" rel="noopener noreferrer">here.</a>
                       </p>
                     </div>
@@ -260,8 +276,11 @@ function EIDforms({ onHandleNoDomain }) {
                     <div className="row justify-content-center mb-3">
                       <div className="col-sm-12 col-md-6 text-center">
                         <p className="up-style">
-                          Logging in with a qualified electronic certificate is a high level of trust.{" "}
+                          Logging in with a qualified electronic certificate is a high level of trust. <br />
                           <a href="#" className="up-link">Find out more.</a>
+                        </p>
+                        <p className="up-style">
+                          Insert a qualified electronic certificate and click Sign in. <br />
                         </p>
                       </div>
                     </div>
@@ -276,21 +295,21 @@ function EIDforms({ onHandleNoDomain }) {
                           className="aetButton aetButton-green btn"
                           onClick={signInMFASC}
                         >
-                          <div className="aetB-d-flex">
-                            <p className="d-flex align-items-center m-0" style={{ margin: "auto" }}>
-                              <span className="third-layer" />
-                              <span>Sign in</span>
-                            </p>
-                          </div>
+                             <div className="aetB-d-flex">
+                              <p className="d-flex align-items-center" style={{ margin: "auto" }}>
+                                <span className="first-layer" />
+                                <span className="text-light">Sign in</span>
+                              </p>
+                            </div>
                         </button>
                       </div>
                     </div>
                   </div>
 
                   <div className="row mt-3">
-                    <div className="col-sm-12 col-md-6 text-center">
+                    <div className="col-sm-12 col-md-6 text-center mx-auto">
                       <p className="up-style">
-                        Don't have an account at eid.gov.rs? Register{" "}
+                        Don't have an account at eid.gov.rs? Register
                         <a className="up-link" href="https://eid.gov.rs/en-US/start" target="_blank" rel="noopener noreferrer">here.</a>
                       </p>
                     </div>
@@ -311,7 +330,7 @@ function EIDforms({ onHandleNoDomain }) {
                     <div className="row justify-content-center mb-3">
                       <div className="col-sm-12 col-md-8 text-center">
                         <p className="up-style">
-                          Logging in with a mobile phone is done using the ConsentID application and is a high-level login.
+                          Logging in with a mobile phone is done using the ConsentID application and is a high-level login. <br />
                           <a href="#" className="up-link"> Find out more. </a>
                         </p>
                       </div>
@@ -322,7 +341,7 @@ function EIDforms({ onHandleNoDomain }) {
                     <div className="col-sm-12">
                       <div className="row justify-content-center">
                         <div className="col-sm-12 col-md-6">
-                          <div className="form-group mb-3">
+                          <div className="form-group form-row mb-3">
                             <label htmlFor="usernameCid">Username:</label>
                             <div className="up-style-desc mb-1">(Email address used for registration)</div>
                             <div className="ic">
@@ -350,21 +369,21 @@ function EIDforms({ onHandleNoDomain }) {
                           type="submit"
                           className="aetButton aetButton-green btn"
                         >
-                          <div className="aetB-d-flex">
-                            <p className="d-flex align-items-center m-0" style={{ margin: "auto" }}>
-                              <span className="third-layer" />
-                              <span>Sign in</span>
-                            </p>
-                          </div>
+                            <div className="aetB-d-flex">
+                              <p className="d-flex align-items-center" style={{ margin: "auto" }}>
+                                <span className="first-layer" />
+                                <span className="text-light">Sign in</span>
+                              </p>
+                            </div>
                         </button>
                       </div>
                     </div>
                   </div>
 
                   <div className="row mt-3">
-                    <div className="col-sm-12 col-md-6 text-center">
+                    <div className="col-sm-12 col-md-6 text-center mx-auto">
                       <p className="link-bottom">
-                        Don't have an account at eid.gov.rs? Register{" "}
+                        Don't have an account at eid.gov.rs? Register
                         <a href="#" className="up-link">here.</a>
                       </p>
                       <p className="link-bottom">

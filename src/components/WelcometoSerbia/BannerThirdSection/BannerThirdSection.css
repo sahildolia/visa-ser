@@ -78,7 +78,7 @@ a {
 }
 .e-application-landing-page .banner-section .app-container::after {
     content: "\f0ac";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     position: absolute;
     display: block;
@@ -126,6 +126,11 @@ a {
     color: #253956;
     margin-top: 20px;
     font-size: 77px;
+    font-weight: 900;
+}
+.e-application-landing-page .support-section .container {
+    max-width: 890px;
+    padding: 0 20px;
 }
 .e-application-landing-page .support-section__content {
     padding-right: 60px;

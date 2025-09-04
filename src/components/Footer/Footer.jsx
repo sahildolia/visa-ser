@@ -1,5 +1,8 @@
 import React from 'react'
 import './Footer.css'
+import footerLogo from '../../assets/859678d5a14e88271c1a187a5a479caa.png';
+
+
 function Footer() {
   return (
     <>
@@ -18,7 +21,7 @@ function Footer() {
     <div className="app-container d-flex align-items-center">
       <div className="e-application-footer__content__logo me-3">
         <img
-          src='../../assets/859678d5a14e88271c1a187a5a479caa.png'
+          src={footerLogo}
           alt="footer_logo"
         />
       </div>

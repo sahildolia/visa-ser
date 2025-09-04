@@ -159,6 +159,9 @@ header .lang .ll-active a {
     height: 5px;
     top: calc(50% - 2px);
 }
+.container a, .container button{
+    color: #253965;
+}
 header .settings {
     box-sizing: border-box;
     height: 0;

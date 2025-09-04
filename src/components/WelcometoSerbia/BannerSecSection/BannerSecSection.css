@@ -21,6 +21,12 @@
     padding: 0 20px;
     overflow: hidden;
 }
+.app-btn.app-btn-primary {
+    /* background-color: var(--color-primary-300); */
+    /* color: var(--color-white); */
+    background-color: #4A90E2;
+    color: #fff;
+}
 .e-application-landing-page .main-section__title {
     width: 100%;
     max-width: 250px;

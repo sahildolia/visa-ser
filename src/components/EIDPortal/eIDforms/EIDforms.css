@@ -195,7 +195,7 @@ label {
     font-size: 0.9rem;
     color: #253965;
 }
-.gen-form .form-row .ic {
+/* .gen-form .form-row .ic {
     border: 1px solid #253965;
 }
 .gen-form .form-row .ic {
@@ -203,7 +203,7 @@ label {
     width: 100%;
     border: 1px solid #253965;
 
-}
+} */
 .gen-form .form-row {
     padding-left: 22px !important;
     margin-bottom: 15px !important;
@@ -286,10 +286,28 @@ label {
 .up-link {
     font-weight: 700;
     text-decoration: underline !important;
+    color: #253965;
 }
 .up-style {
     font-size: 1rem;
     color: #253965;
     padding: 5px;
     /* height: 50px; */
+}
+
+/*  */
+
+.gen-form .form-row input[type=text], .gen-form .form-row input[type=password], .gen-form .form-row input[type=text], .gen-form .form-row textarea {
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: 1px solid #253965;
+    display: block;
+    height: 50px;
+    padding: 0 16px;
+    color: #253965;
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
 }

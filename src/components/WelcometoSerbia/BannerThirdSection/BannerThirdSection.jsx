@@ -24,7 +24,7 @@ function BannerThirdSection() {
                 </button>
               </a>
             </div> */}
-<div className="col-12 col-md-6 banner-section__content">
+<div className="col-12 col-md-6 banner-section__content float-end">
   <h4>Did you find the service you are looking for?</h4>
   <p>
     Learn more about the visa regime. Find more information,
@@ -59,27 +59,26 @@ function BannerThirdSection() {
           </div>
         </section> */}
         <section className="app-page-section support-section py-5">
-  <div className="container d-flex align-items-center">
-    <div className="support-section__main d-flex align-items-center me-4">
-      <h4 className="me-2 mb-0">Support</h4>
-      <i className="fa-regular fa-envelope-open-text fa-2x"></i>
-    </div>
+          <div className="container d-flex align-items-center">
+            <div className="support-section__main me-4">
+              <h4 className="me-2 mb-0">Support</h4>
+              <i className="fa-regular fa-envelope-open-text fa-2x"></i>
+            </div>
 
-    <div className="support-section__content">
-      <p className="fw-semibold mb-3">
-        If you have additional questions about the visa regime, permits
-        and electronic services, please contact us:
-      </p>
-      <a href="mailto:office@ite.gov.rs">
-        <button className="btn btn-dark">Contact</button>
-      </a>
-    </div>
-  </div>
-</section>
-
-</div>
+            <div className="support-section__content">
+              <p className="fw-semibold mb-3">
+                If you have additional questions about the visa regime, permits
+                and electronic services, please contact us:
+              </p>
+              <a href="mailto:office@ite.gov.rs">
+                <button className="btn btn-dark text-light">Contact</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </>
-  )
+  );
 }
 
-export default BannerThirdSection
+export default BannerThirdSection;

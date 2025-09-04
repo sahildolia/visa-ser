@@ -57,10 +57,10 @@ function EidHeader() {
               EGovernment portal
             </a>
           </li>
-          <li>
+          <li style={{listStyle: "none"}} className='align-self-center'>
             {/* Back button handler in React */}
             <button
-              className="btn btn-link p-0"
+              className="btn p-0"
               type="button"
               onClick={() => window.history.back()}
             >
@@ -74,7 +74,7 @@ function EidHeader() {
       <div className="lang">
         <div className="ll-cont">
           <div className="ll-active">
-            <a href="/">Language</a>
+            <a href="/" className='text-light'>Language</a>
           </div>
           {/* <ul id="menuLanguage" className="list-unstyled">
             <li id="1">

@@ -75,6 +75,10 @@ a {
     padding: 0 20px;
     overflow: hidden;
 }
+.app-header__menu .app-container {
+border-left: 1px solid #fff;
+max-width: 1252px;
+}
 .app-header__menu nav {
 	height: 100%;
 }

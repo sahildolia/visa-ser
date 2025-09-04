@@ -41,14 +41,14 @@ function Navbar() {
         {/* Menu */}
         <div className="app-header__menu">
           <div className="app-container">
-            <nav className="d-flex justify-content-between">
+            <nav className="d-flex justify-content-between position-relative float-end">
               {/* <div className="main-link-button white-button profile-button">
                 <a href="/home">Log in</a>
               </div> */}
 
-              <ul className="d-flex align-items-center"></ul>
+              {/* <ul className="d-flex align-items-center"></ul>
 
-              <div className="app-header__menu__buttons d-flex align-items-center"></div>
+              <div className="app-header__menu__buttons d-flex align-items-center"></div> */}
 
               <div className="app-header__menu__language d-flex align-items-center">
                 <a href="/Home/SetLanguage?culture=sr-Cyrl-RS&returnUrl=/">ЋИР</a>

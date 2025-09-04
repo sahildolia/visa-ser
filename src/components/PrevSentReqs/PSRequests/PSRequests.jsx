@@ -95,7 +95,7 @@ function PSRequests() {
                   {request.visa}
                 </div>
                 <div className="request-cell" data-label="Action">
-                  <button className="open-request-btn">
+                  <button className="open-request-btn text-light">
                     Open Request
                   </button>
                 </div>
