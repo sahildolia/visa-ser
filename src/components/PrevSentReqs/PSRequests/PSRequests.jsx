@@ -54,45 +54,48 @@ function PSRequests() {
           <div className="requests-container">
             {/* Table Header */}
             <div className="request-row header-row">
-              <div className="request-cell" style={{textAlign: "justify"}}>Request number</div>
-              <div className="request-cell">Visa request ID</div>
+              <div className="request-cell" style={{textAlign: "justify"}}></div>
+              {/* <div className="request-cell">Visa request ID</div> */}
               <div className="request-cell">Foreign Citizen's Reg. No</div>
               <div className="request-cell">First and last name</div>
               <div className="request-cell">Representative office</div>
               <div className="request-cell">Status</div>
               <div className="request-cell">Comment</div>
               <div className="request-cell">Attachment</div>
-              <div className="request-cell">Visa</div>
-              <div className="request-cell">Action</div>
+              <div className="request-cell"></div>
+              <div className="request-cell"></div>
             </div>
 
             {/* Table Rows */}
             {requests.map((request, index) => (
               <div className="request-row" key={index}>
-                <div className="request-cell rc-bold" data-label="Request number">
-                  {request.requestNumber}
-                </div>
+                <div className="request-cell rc-bold d-block position-relative" data-label="Request number">
+                  <div className="request-cell gray" style={{textAlign: "justify"}}>Request number</div>
+                  {request.requestNumber} <br /> 
+                   <div className="request-cell gray">Visa request ID</div>
                 <div className="request-cell rc-bold" data-label="Visa request ID">
                   {request.visaRequestId}
+                </div> <br /><br />
                 </div>
-                <div className="request-cell rc-bold" data-label="Foreign Citizen's Reg. No">
+                <hr />
+                <div className="request-cell rc-bold justify-content-center" data-label="Foreign Citizen's Reg. No" style={{alignSelf: "flex-start"}}>
                   {request.registrationNumber}
                 </div>
-                <div className="request-cell rc-bold" data-label="First and last name">
+                <div className="request-cell rc-bold" data-label="First and last name" style={{alignSelf: "flex-start"}}>
                   {request.name}
                 </div>
-                <div className="request-cell rc-bold" data-label="Representative office">
+                <div className="request-cell rc-bold justify-content-center" data-label="Representative office" style={{alignSelf: "flex-start"}}>
                   {request.office}
                 </div>
-                <div className="request-cell rc-bold" data-label="Status">
+                <div className="request-cell rc-bold" data-label="Status" style={{alignSelf: "flex-start"}}>
                   <span className={`status-badge ${request.status.toLowerCase().includes('approved') ? 'approved' : 'approved'}`}>
                     {request.status}
                   </span>
                 </div>
-                <div className="request-cell rc-bold" data-label="Comment">
+                <div className="request-cell rc-bold justify-content-center" data-label="Comment" style={{alignSelf: "flex-start"}}>
                   {request.comment}
                 </div>
-                <div className="request-cell rc-bold" data-label="Attachment">
+                <div className="request-cell rc-bold justify-content-center" data-label="Attachment" style={{alignSelf: "flex-start"}}>
                   {request.attachment !== '/' ? (
                     <a href="#" className="attachment-link">
                       <i className="fas fa-paperclip"></i> {request.attachment}
@@ -101,10 +104,11 @@ function PSRequests() {
                     request.attachment
                   )}
                 </div>
-                <div className="request-cell rc-bold" data-label="Visa">
+                <div className="request-cell rc-bold d-block pr-36" data-label="Visa">
+                   <div className="request-cell gray">Visa</div>
                   {request.visa}
                 </div>
-                <div className="request-cell rc-bold" data-label="Action">
+                <div className="request-cell rc-bold" data-label="Action" style={{alignSelf: "flex-start"}}>
                   <button 
                     className="open-request-btn text-light"
                     onClick={() => openPdfInNewTab(request.pdfFile)}

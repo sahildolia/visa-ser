@@ -53,10 +53,10 @@ function PRNavbar() {
               <div className="app-header__menu__buttons d-flex align-items-center"></div>
               <div className="d-flex justify-content-between w-100">
                 <div className="app-header__menu__language d-flex align-items-center">
-                  <Link to="/" className='pr-24'>Home Page</Link> &nbsp;
-                  <Link to="/" className='pr-24'>Visa C</Link> &nbsp;
-                  <Link to="/" className='pr-24'>Visa D</Link> &nbsp;
-                  <Link to="/ps-requests">My requests</Link>
+                  <Link to="/" className='pr-24'>Home Page</Link> 
+                  <Link to="/" className='pr-24'>Visa C</Link> 
+                  <Link to="/" className='pr-24' style={{borderLeft: "1px solid rgb(255 255 255 / 54%)"}}>Visa D</Link> 
+                  <Link to="/ps-requests" style={{borderRight: "1px solid rgb(255 255 255 / 54%)"}}>My requests</Link>
                 </div>
                 <div className="app-header__menu__language d-flex align-items-center">
                   <a href="/Home/SetLanguage?culture=sr-Cyrl-RS&returnUrl=/">ЋИР</a>

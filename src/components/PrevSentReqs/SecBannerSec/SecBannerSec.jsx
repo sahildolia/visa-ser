@@ -22,7 +22,7 @@ function SecBannerSec() {
                   fxlayout="row"
                   fxlayoutalign="start center"
                 >
-                  <Link to="/elect-id">
+                  {/* <Link to="/elect-id">
                     <button className="app-btn app-btn-dark">Login</button>
                   </Link>
                   <Link
@@ -31,7 +31,7 @@ function SecBannerSec() {
                     to="/"
                   >
                     Register an account
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
 
@@ -51,11 +51,11 @@ In a valid travel documents in the form of the sticker also used for the issuanc
                   fxlayout="row"
                   fxlayoutalign="start center"
                 >
-                  <a href="https://euprava.gov.rs/">
+                  {/* <a href="https://euprava.gov.rs/">
                     <button className="app-btn app-btn-primary">
                       Open eGovernment Portal
                     </button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
