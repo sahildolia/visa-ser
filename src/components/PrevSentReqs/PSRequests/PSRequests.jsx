@@ -3,36 +3,8 @@ import React from 'react'
 import PRNavbar from '../PRNavbar/PRNavbar'
 import './PSRequests.css'
 import WelcomeUserPr from '../WelcomeUserPr/WelcomeUserPr';
-function PSRequests() {
-  // Sample data for demonstration
-  const requests = [
-    {
-      requestNumber: '291296',
-      visaRequestId: '351204',
-      registrationNumber: '/',
-      name: 'BABU MD',
-      office: 'NEW DELHI',
-      status: 'Request approved',
-      comment: '/',
-      attachment: '/',
-      visa: 'Visa D',
-      // Add PDF file path for each request
-      pdfFile: "/documents/sample-1.pdf"
-    },
-    {
-      requestNumber: '285642',
-      visaRequestId: '322096',
-      registrationNumber: '/',
-      name: 'MANOJ RAJIV SHUKLA',
-      office: 'LONDON',
-      status: 'Processing',
-      comment: 'Additional documents required',
-      attachment: 'document.pdf',
-      visa: 'Visa D',
-      pdfFile: "/documents/sample-1.pdf"
-    }
-  ];
 
+function PSRequests() {
   // Function to open PDF in new tab
   const openPdfInNewTab = (pdfPath) => {
     window.open(pdfPath, '_blank', 'noopener,noreferrer');
@@ -40,8 +12,8 @@ function PSRequests() {
 
   return (
     <>
-      {/* <PRNavbar/>
-      <WelcomeUserPr/> */}
+      {/* <PRNavbar/> */}
+      {/* <WelcomeUserPr/> */}
 
       <section className="breadcrumbs">
         <div className="container">
@@ -54,70 +26,323 @@ function PSRequests() {
           <div className="requests-container">
             {/* Table Header */}
             <div className="request-row header-row">
-              <div className="request-cell" style={{textAlign: "justify"}}></div>
-              {/* <div className="request-cell">Visa request ID</div> */}
-              <div className="request-cell">Foreign Citizen's Reg. No</div>
-              <div className="request-cell">First and last name</div>
-              <div className="request-cell">Representative office</div>
-              <div className="request-cell">Status</div>
-              <div className="request-cell">Comment</div>
-              <div className="request-cell">Attachment</div>
-              <div className="request-cell"></div>
-              <div className="request-cell"></div>
-            </div>
-
-            {/* Table Rows */}
-            {requests.map((request, index) => (
-              <div className="request-row" key={index}>
-                <div className="request-cell rc-bold d-block position-relative" data-label="Request number">
-                  <div className="request-cell gray" style={{textAlign: "justify"}}>Request number</div>
-                  {request.requestNumber} <br /> 
-                   <div className="request-cell gray">Visa request ID</div>
-                <div className="request-cell rc-bold" data-label="Visa request ID">
-                  {request.visaRequestId}
-                </div> <br /><br />
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Request <br /> number</span>
+                  <span className="rc-bold">291296</span>
                 </div>
-                <hr />
-                <div className="request-cell rc-bold justify-content-center" data-label="Foreign Citizen's Reg. No" style={{alignSelf: "flex-start"}}>
-                  {request.registrationNumber}
-                </div>
-                <div className="request-cell rc-bold" data-label="First and last name" style={{alignSelf: "flex-start"}}>
-                  {request.name}
-                </div>
-                <div className="request-cell rc-bold justify-content-center" data-label="Representative office" style={{alignSelf: "flex-start"}}>
-                  {request.office}
-                </div>
-                <div className="request-cell rc-bold" data-label="Status" style={{alignSelf: "flex-start"}}>
-                  <span className={`status-badge ${request.status.toLowerCase().includes('approved') ? 'approved' : 'approved'}`}>
-                    {request.status}
-                  </span>
-                </div>
-                <div className="request-cell rc-bold justify-content-center" data-label="Comment" style={{alignSelf: "flex-start"}}>
-                  {request.comment}
-                </div>
-                <div className="request-cell rc-bold justify-content-center" data-label="Attachment" style={{alignSelf: "flex-start"}}>
-                  {request.attachment !== '/' ? (
-                    <a href="#" className="attachment-link">
-                      <i className="fas fa-paperclip"></i> {request.attachment}
-                    </a>
-                  ) : (
-                    request.attachment
-                  )}
-                </div>
-                <div className="request-cell rc-bold d-block pr-36" data-label="Visa">
-                   <div className="request-cell gray">Visa</div>
-                  {request.visa}
-                </div>
-                <div className="request-cell rc-bold" data-label="Action" style={{alignSelf: "flex-start"}}>
-                  <button 
-                    className="open-request-btn text-light"
-                    onClick={() => openPdfInNewTab(request.pdfFile)}
-                  >
-                    Open Request
-                  </button>
+                <div className="detail-item">
+                  <span className="gray">Visa request ID</span>
+                  <span className="rc-bold">351204</span>
                 </div>
               </div>
-            ))}
+
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Foreign <br /> Citizen's <br />Registration <br /> number</span>
+                  <span className="rc-bold">/</span>
+                </div>
+          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">First and last <br /> name</span>
+                  <span className="rc-bold"> BABU MD</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">The <br /> representative <br /> office where <br /> the request <br /> was <br /> submitted</span>
+                  <span className="rc-bold">NEW DELHI</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Status</span>
+                     <div className="request-cell">
+                <span className="status-badge approved me-2">Request approved</span>
+              </div>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Comment</span>
+                  <span className="rc-bold">/</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Attachment</span>
+                  <span className="rc-bold">/</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Visa</span>
+                  <span className="rc-bold"> Visa D</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details" style={{alignSelf: "center"}}>
+                <div className="detail-item">
+                  <span className="gray"></span>
+                  <span className="rc-bold">
+                                  <div className="request-cell">
+                <button 
+                  className="open-request-btn text-light"
+                  onClick={() => openPdfInNewTab("/documents/sample-1.pdf")}
+                >
+                  Open Request
+                </button>
+              </div>
+                  </span>
+                </div>          
+              </div>
+            </div>
+
+ 
+
+            {/* Second Row */}
+            <div className="request-row">
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Request <br /> number</span>
+                  <span className="rc-bold">285642</span>
+                </div>
+                <div className="detail-item">
+                  <span className="gray">Visa request ID</span>
+                  <span className="rc-bold">322096</span>
+                </div>
+              </div>
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Foreign <br /> Citizen's<br /> Registration <br /> number</span>
+                  <span className="rc-bold">/</span>
+                </div>
+          
+              </div>
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">First and last <br /> name</span>
+                  <span className="rc-bold"> RD SHARMA</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">The <br /> representative <br /> office where <br /> the request <br /> was <br /> submitted</span>
+                  <span className="rc-bold">NEW DELHI</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Status</span>
+                     <div className="request-cell">
+                <span className="status-badge approved me-2">Request approved</span>
+              </div>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Comment</span>
+                  <span className="rc-bold">/</span>
+                </div>          
+              </div>
+              {/* <div className="request-cell rc-bold">
+                <a href="#" className="attachment-link">
+                  <i className="fas fa-paperclip"></i> file.pdf
+                </a>
+              </div> */}
+                             <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Attachment</span>
+                  <a href="#" className="attachment-link">
+                  <i className="fas fa-paperclip"></i> file.pdf
+                </a>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Visa</span>
+                  <span className="rc-bold"> Visa D</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details" style={{alignSelf: "center"}}>
+                <div className="detail-item" style={{alignSelf: "center"}}>
+                  <span className="gray"></span>
+                  <span className="rc-bold">
+                                  <div className="request-cell">
+                <button 
+                  className="open-request-btn text-light"
+                  onClick={() => openPdfInNewTab("/documents/sample-1.pdf")}
+                >
+                  Open Request
+                </button>
+              </div>
+                  </span>
+                </div>          
+              </div>
+            </div>
+            {/* tHIRD rOW*/}
+
+            <div className="request-row">
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Request <br /> number</span>
+                  <span className="rc-bold">285642</span>
+                </div>
+                <div className="detail-item">
+                  <span className="gray">Visa request ID</span>
+                  <span className="rc-bold">322096</span>
+                </div>
+              </div>
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Foreign <br /> Citizen's<br /> Registration <br /> number</span>
+                  <span className="rc-bold">/</span>
+                </div>
+          
+              </div>
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">First and last <br /> name</span>
+                  <span className="rc-bold"> TOMMY</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">The <br /> representative <br /> office where <br /> the request <br /> was <br /> submitted</span>
+                  <span className="rc-bold">SAN ANDREAS</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Status</span>
+                     <div className="request-cell">
+                <span className="status-badge approved me-2">Request approved</span>
+              </div>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Comment</span>
+                  <span className="rc-bold">/</span>
+                </div>          
+              </div>
+              {/* <div className="request-cell rc-bold">
+                <a href="#" className="attachment-link">
+                  <i className="fas fa-paperclip"></i> file.pdf
+                </a>
+              </div> */}
+                             <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Attachment</span>
+                  <a href="#" className="attachment-link">
+                  <i className="fas fa-paperclip"></i> file.pdf
+                </a>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Visa</span>
+                  <span className="rc-bold"> Visa D</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details" style={{alignSelf: "center"}}>
+                <div className="detail-item" style={{alignSelf: "center"}}>
+                  <span className="gray"></span>
+                  <span className="rc-bold">
+                                  <div className="request-cell">
+                <button 
+                  className="open-request-btn text-light"
+                  onClick={() => openPdfInNewTab("/documents/sample-1.pdf")}
+                >
+                  Open Request
+                </button>
+              </div>
+                  </span>
+                </div>          
+              </div>
+            </div>
+
+            {/* Fourth Row */}
+            <div className="request-row">
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Request <br /> number</span>
+                  <span className="rc-bold">285642</span>
+                </div>
+                <div className="detail-item">
+                  <span className="gray">Visa request ID</span>
+                  <span className="rc-bold">322096</span>
+                </div>
+              </div>
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Foreign <br /> Citizen's<br /> Registration <br /> number</span>
+                  <span className="rc-bold">/</span>
+                </div>
+          
+              </div>
+              <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">First and last <br /> name</span>
+                  <span className="rc-bold"> BABU RAO</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">The <br /> representative <br /> office where <br /> the request <br /> was <br /> submitted</span>
+                  <span className="rc-bold">Mumbai</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Status</span>
+                     <div className="request-cell">
+                <span className="status-badge approved me-2">Request approved</span>
+              </div>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Comment</span>
+                  <span className="rc-bold">/</span>
+                </div>          
+              </div>
+              {/* <div className="request-cell rc-bold">
+                <a href="#" className="attachment-link">
+                  <i className="fas fa-paperclip"></i> file.pdf
+                </a>
+              </div> */}
+                             <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Attachment</span>
+                  <a href="#" className="attachment-link">
+                 <span className="rc-bold">/</span>
+                </a>
+                </div>          
+              </div>
+               <div className="request-cell request-details">
+                <div className="detail-item">
+                  <span className="gray">Visa</span>
+                  <span className="rc-bold"> Visa C</span>
+                </div>          
+              </div>
+               <div className="request-cell request-details" style={{alignSelf: "center"}}>
+                <div className="detail-item" style={{alignSelf: "center"}}>
+                  <span className="gray"></span>
+                  <span className="rc-bold">
+                                  <div className="request-cell">
+                <button 
+                  className="open-request-btn text-light"
+                  onClick={() => openPdfInNewTab("/documents/sample-1.pdf")}
+                >
+                  Open Request
+                </button>
+              </div>
+                  </span>
+                </div>          
+              </div>
+            </div>
           </div>
         </div>
       </section>
