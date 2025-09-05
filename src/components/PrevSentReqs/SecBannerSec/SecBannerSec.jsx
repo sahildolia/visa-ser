@@ -14,7 +14,7 @@ function SecBannerSec() {
               <div className="main-section__content__item" fxlayout="column">
                 <h4>Visa C</h4>
                 <p>
-               A short stay visa C is a permit issued to a foreigner for entry, transit and short term stay.
+              A short stay visa Cis a permit issued to a foreigner for entry, transit and short-term stay visa to enter the republic of Serbia.
                 </p>
                 <p>List of available services will be presented after you login.</p>
                 <div
@@ -36,14 +36,16 @@ function SecBannerSec() {
               </div>
 
               <div className="main-section__content__item" fxlayout="column">
-                <h4>For companies in Republic of Serbia</h4>
-                <p>Apply if you wish to employe one or more foreign citizens.</p>
+                <h4>Visa D</h4>
+                <p>To third-country nationals who have been granted temporary stay or issued stay and work permit, and are required to hold a short-term visa to enter the Republic of Serbia,
+For maximum 30-days’ stay in Serbia,
+With the period of validity no longer than six months; </p>
                 <p>
-                  eServices available for companies are group visa D and group
-                  temporary residence,
+                 long-term visa shall not become valid prior to the beginning of validity of the granted temporary stay of the issued stay and work permit in the Republic of serbia;
+In a valid travel documents in the form of the sticker also used for the issuance of visas type C; the letter “D” is entered into the category “Type of visa”
                 </p>
-                <p>and unified permit for temporary residence and work.</p>
-                <p>To access eServices register on eGovernment Portal.</p>
+                {/* <p>and unified permit for temporary residence and work.</p>
+                <p>To access eServices register on eGovernment Portal.</p> */}
                 <div
                   className="main-section__content__item__actions"
                   fxlayout="row"

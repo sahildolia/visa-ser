@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { Image } from 'react-bootstrap'
 import "./PRNavbar.css"
 import { Link } from 'react-router-dom';
-
+import icon from '../../../assets/icon-user.svg';
 function PRNavbar() {
   const [username, setUsername] = useState('');
 
@@ -37,7 +37,8 @@ function PRNavbar() {
                 {/* Display dynamic username */}
                 <a href="/home" className='text-uppercase'>
                   {username || 'Guest User'}
-                </a> 
+                </a> &nbsp;
+                <Image src={icon} alt="user logo" />
               </div>
             </div>
           </div>

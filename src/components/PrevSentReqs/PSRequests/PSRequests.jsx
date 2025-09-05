@@ -3,7 +3,6 @@ import React from 'react'
 import PRNavbar from '../PRNavbar/PRNavbar'
 import './PSRequests.css'
 import WelcomeUserPr from '../WelcomeUserPr/WelcomeUserPr';
-
 function PSRequests() {
   // Sample data for demonstration
   const requests = [
@@ -16,7 +15,9 @@ function PSRequests() {
       status: 'Request approved',
       comment: '/',
       attachment: '/',
-      visa: 'Visa D'
+      visa: 'Visa D',
+      // Add PDF file path for each request
+      pdfFile: "/documents/sample-1.pdf"
     },
     {
       requestNumber: '285642',
@@ -27,9 +28,15 @@ function PSRequests() {
       status: 'Processing',
       comment: 'Additional documents required',
       attachment: 'document.pdf',
-      visa: 'Visa C'
+      visa: 'Visa C',
+      pdfFile: "/documents/sample-1.pdf"
     }
   ];
+
+  // Function to open PDF in new tab
+  const openPdfInNewTab = (pdfPath) => {
+    window.open(pdfPath, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <>
@@ -98,7 +105,10 @@ function PSRequests() {
                   {request.visa}
                 </div>
                 <div className="request-cell" data-label="Action">
-                  <button className="open-request-btn text-light">
+                  <button 
+                    className="open-request-btn text-light"
+                    onClick={() => openPdfInNewTab(request.pdfFile)}
+                  >
                     Open Request
                   </button>
                 </div>

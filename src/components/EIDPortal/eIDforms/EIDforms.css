@@ -172,6 +172,26 @@ li {
     margin-bottom: 5px;
     display: inline-block;
 }
+.user-certificate-lg {
+    background: url('../../../assets/icon-certificate-lg.svg') !important;
+    height: 55px;
+    width: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.user-mobile-lg {
+    background: url('../../../assets/icon-mobile-lg.svg') !important;
+    height: 55px;
+    width: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
 .up-link {
     font-weight: 700;
     text-decoration: underline !important;
@@ -195,15 +215,7 @@ label {
     font-size: 0.9rem;
     color: #253965;
 }
-/* .gen-form .form-row .ic {
-    border: 1px solid #253965;
-}
-.gen-form .form-row .ic {
-    position: relative;
-    width: 100%;
-    border: 1px solid #253965;
 
-} */
 .gen-form .form-row {
     padding-left: 22px !important;
     margin-bottom: 15px !important;

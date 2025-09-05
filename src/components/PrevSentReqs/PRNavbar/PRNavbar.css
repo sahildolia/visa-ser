@@ -102,6 +102,21 @@ a {
     margin: 0 10px;
     color: #4A90E2;
 }
+.app-header__menu__language a{
+    height: 100%;
+    align-content: center;
+    padding: 0px 24px;
+    margin: 0;
+	transition: .2s ease-in-out;
+	border: 1px solid #253956;
+}
+.app-header__menu__language a:hover{
+	background-color: #fff;
+	color: #253956;
+}
+.text-uppercase{
+	color: #253956;
+}
 .pr-24{
 	padding-right: 28px;
 }
