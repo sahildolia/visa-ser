@@ -33,8 +33,8 @@ function SecBannerSec() {
                     Register an account
                   </Link> */}
                 </div>
+<hr />
               </div>
-
               <div className="main-section__content__item" fxlayout="column">
                 <h4>Visa D</h4>
                 <p>To third-country nationals who have been granted temporary stay or issued stay and work permit, and are required to hold a short-term visa to enter the Republic of Serbia,
