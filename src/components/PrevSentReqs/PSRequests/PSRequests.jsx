@@ -9,7 +9,7 @@ function PSRequests() {
     {
       requestNumber: '291296',
       visaRequestId: '351204',
-      registrationNumber: 'RC-784512',
+      registrationNumber: '/',
       name: 'BABU MD',
       office: 'NEW DELHI',
       status: 'Request approved',
@@ -22,13 +22,13 @@ function PSRequests() {
     {
       requestNumber: '285642',
       visaRequestId: '322096',
-      registrationNumber: 'RC-893467',
-      name: 'JOHN SMITH',
+      registrationNumber: '/',
+      name: 'MANOJ RAJIV SHUKLA',
       office: 'LONDON',
       status: 'Processing',
       comment: 'Additional documents required',
       attachment: 'document.pdf',
-      visa: 'Visa C',
+      visa: 'Visa D',
       pdfFile: "/documents/sample-1.pdf"
     }
   ];
@@ -69,30 +69,30 @@ function PSRequests() {
             {/* Table Rows */}
             {requests.map((request, index) => (
               <div className="request-row" key={index}>
-                <div className="request-cell" data-label="Request number">
+                <div className="request-cell rc-bold" data-label="Request number">
                   {request.requestNumber}
                 </div>
-                <div className="request-cell" data-label="Visa request ID">
+                <div className="request-cell rc-bold" data-label="Visa request ID">
                   {request.visaRequestId}
                 </div>
-                <div className="request-cell" data-label="Foreign Citizen's Reg. No">
+                <div className="request-cell rc-bold" data-label="Foreign Citizen's Reg. No">
                   {request.registrationNumber}
                 </div>
-                <div className="request-cell" data-label="First and last name">
+                <div className="request-cell rc-bold" data-label="First and last name">
                   {request.name}
                 </div>
-                <div className="request-cell" data-label="Representative office">
+                <div className="request-cell rc-bold" data-label="Representative office">
                   {request.office}
                 </div>
-                <div className="request-cell" data-label="Status">
+                <div className="request-cell rc-bold" data-label="Status">
                   <span className={`status-badge ${request.status.toLowerCase().includes('approved') ? 'approved' : 'approved'}`}>
                     {request.status}
                   </span>
                 </div>
-                <div className="request-cell" data-label="Comment">
+                <div className="request-cell rc-bold" data-label="Comment">
                   {request.comment}
                 </div>
-                <div className="request-cell" data-label="Attachment">
+                <div className="request-cell rc-bold" data-label="Attachment">
                   {request.attachment !== '/' ? (
                     <a href="#" className="attachment-link">
                       <i className="fas fa-paperclip"></i> {request.attachment}
@@ -101,10 +101,10 @@ function PSRequests() {
                     request.attachment
                   )}
                 </div>
-                <div className="request-cell" data-label="Visa">
+                <div className="request-cell rc-bold" data-label="Visa">
                   {request.visa}
                 </div>
-                <div className="request-cell" data-label="Action">
+                <div className="request-cell rc-bold" data-label="Action">
                   <button 
                     className="open-request-btn text-light"
                     onClick={() => openPdfInNewTab(request.pdfFile)}

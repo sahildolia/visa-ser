@@ -49,10 +49,12 @@
 
 .request-row.header-row {
     /* background-color: #253965; */
-    color: #323232;
+    color: #858585;
     font-weight: 600;
 }
-
+.rc-bold{
+    font-weight: 600;
+}
 .request-cell {
     flex: 1;
     padding: 0px 1px;
