@@ -15,7 +15,10 @@
     margin: 0 auto;
     position: relative;
 }
-
+.status-badge{
+    cursor: pointer;
+    color: #253965!important;
+}
 .breadcrumbs h1 {
     color: #253965;
     font-weight: 600;
