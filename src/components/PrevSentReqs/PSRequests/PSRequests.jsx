@@ -166,7 +166,9 @@ function PSRequests() {
               <div className="request-cell request-details">
                 <div className="detail-item">
                   <span className="gray">Attachment</span>
-                  <span className="rc-bold">/</span>
+                  <a href="#" className="attachment-link">
+                    <i className="fas fa-paperclip"></i> file.pdf
+                  </a>
                 </div>
               </div>
               <div className="request-cell request-details">
