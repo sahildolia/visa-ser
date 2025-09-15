@@ -51,42 +51,42 @@ function PSRequests() {
   // Toggle functions for each row
   const toggleStatus1 = () => {
     setStatus1(prevStatus => 
-      prevStatus === "Request approved" ? "Processing" : "Request approved"
+      prevStatus === "Request approved" ? "Request processing" : "Request approved"
     );
   };
   const toggleStatus2 = () => {
     setStatus2(prevStatus => 
-      prevStatus === "Request approved" ? "Processing" : "Request approved"
+      prevStatus === "Request approved" ? "Request processing" : "Request approved"
     );
   };
   const toggleStatus3 = () => {
     setStatus3(prevStatus => 
-      prevStatus === "Request approved" ? "Processing" : "Request approved"
+      prevStatus === "Request approved" ? "Request processing" : "Request approved"
     );
   };
   const toggleStatus4 = () => {
     setStatus4(prevStatus => 
-      prevStatus === "Request approved" ? "Processing" : "Request approved"
+      prevStatus === "Request approved" ? "Request processing" : "Request approved"
     );
   };
   const toggleStatus5 = () => {
     setStatus5(prevStatus => 
-      prevStatus === "Request approved" ? "Processing" : "Request approved"
+      prevStatus === "Request approved" ? "Request processing" : "Request approved"
     );
   };
   const toggleStatus6 = () => {
     setStatus6(prevStatus => 
-      prevStatus === "Request approved" ? "Processing" : "Request approved"
+      prevStatus === "Request approved" ? "Request processing" : "Request approved"
     );
   };
   const toggleStatus7 = () => {
     setStatus7(prevStatus => 
-      prevStatus === "Request approved" ? "Processing" : "Request approved"
+      prevStatus === "Request approved" ? "Request processing" : "Request approved"
     );
   };
   const toggleStatus8 = () => {
     setStatus8(prevStatus => 
-      prevStatus === "Request approved" ? "Processing" : "Request approved"
+      prevStatus === "Request approved" ? "Request processing" : "Request approved"
     );
   };
   // Function to open PDF in new tab
